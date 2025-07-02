@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finarytics - Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" href="assets/logos/favicon-finarytics.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#"><img src="assets/logos/logo-finarytics.png" class="h-9"></a>
+
+            <!-- Nav Links (Desktop) -->
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
+                <a href="#fitur" class="hover:text-blue-600">Fitur</a>
+                <a href="#harga" class="hover:text-blue-600">Harga</a>
+                <a href="#testimoni" class="hover:text-blue-600">Testimoni</a>
+                <a href="#kontak" class="hover:text-blue-600">Kontak</a>
+            </nav>
+
+            <!-- CTA & Auth (Desktop) -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#login" class="text-sm text-gray-700 hover:text-blue-600">Login</a>
+                <a href="#register"
+                    class="text-sm px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Register</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-6">
+            <nav class="flex flex-col space-y-3 text-sm font-medium text-gray-700">
+                <a href="#fitur" class="hover:text-blue-600">Fitur</a>
+                <a href="#harga" class="hover:text-blue-600">Harga</a>
+                <a href="#testimoni" class="hover:text-blue-600">Testimoni</a>
+                <a href="#kontak" class="hover:text-blue-600">Kontak</a>
+                <a href="#login" class="text-gray-700 hover:text-blue-600">Login</a>
+                <a href="#register"
+                    class="inline-block px-4 py-2 bg-blue-600 text-white rounded-full text-center hover:bg-blue-700 transition">
+                    Register
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-blue-400 to-white pt-10 pb-20">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center gap-10">
+            <div class="text-center md:text-left md:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+                    Kendalikan Keuanganmu, <br />
+                    Kuasai <span class="text-green-300">Bisnismu.</span>
+                </h1>
+                <p class="mt-4 text-white/80 text-lg">
+                    Kami menyediakan fitur yang dapat mempermudah pengelolaan finansial. Coba sekarang & dapatkan
+                    promo menarik!
+                </p>
+                <div class="mt-6 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <button
+                        class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-blue-100 transition">
+                        Coba Gratis
+                    </button>
+                    <button
+                        class="border border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-blue-600 transition">
+                        Tonton Demo
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="assets/homePage.png" alt="Dashboard" class="w-full rounded-xl shadow-xl" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Partner -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center gap-8 grayscale opacity-80">
+            <a href="https://home.amikom.ac.id/" target="_blank" class="transition-transform hover:scale-105 active:scale-95">
+                <img src="assets/logos/amikom.png" class="h-11" />
+            </a>
+            <a href="https://abpincubator.com/" target="_blank" class="transition-transform hover:scale-105 active:scale-95">
+                <img src="assets/logos/abp.png" class="h-11" />
+            </a>
+            <a href="https://www.instagram.com/yaltouch/" target="_blank" class="transition-transform hover:scale-105 active:scale-95">
+                <img src="assets/logos/yal.png" class="h-8" />
+            </a>
+            <a href="https://rbtvjogja.tv/" target="_blank" class="transition-transform hover:scale-105 active:scale-95">
+                <img src="assets/logos/rbtv.png" class="h-12" />
+            </a>
+            <a href="https://purplesnap.com" target="_blank" class="transition-transform hover:scale-105 active:scale-95">
+                <img src="assets/logos/purplesnap.png" class="h-8" />
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Fitur Utama -->
+    <section id="fitur" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">Solusi Kami Untuk Bisnis Anda</h2>
+            <p class="text-gray-500 max-w-2xl mx-auto mb-12">Kami memudahkan pengguna untuk menggunakan platform kami,
+                itulah mengapa kami memberikan manfaat ini.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow border hover:shadow-md transition">
+                    <div class="w-12 h-12 mb-4 rounded-xl bg-blue-100 bg-blue-100 flex items-center justify-center">
+                        <img src="assets/icons/protect-cloud-1.svg" alt="icon finance" class="w-6 h-6" />
+                    </div>
+                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Finance Security</h3>
+                    <p class="text-gray-500 text-sm mb-4">Semua informasi transaksi terenkripsi dan berlapis keamanan.
+                        Lebih aman, lebih tenang.</p>
+                    <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">Pelajari selengkapnya</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow border hover:shadow-md transition">
+                    <div class="w-12 h-12 mb-4 rounded-xl bg-blue-100 flex items-center justify-center">
+                        <img src="assets/icons/secure.svg" alt="icon sync" class="w-6 h-6" />
+                    </div>
+                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Synchronization</h3>
+                    <p class="text-gray-500 text-sm mb-4">Disinkronkan dari komputer Windows, Mac, atau Ubuntu Linux ke
+                        cloud dan sebaliknya tanpa masalah.</p>
+                    <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">Pelajari selengkapnya</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow border hover:shadow-md transition">
+                    <div class="w-12 h-12 mb-4 rounded-xl bg-blue-100 flex items-center justify-center">
+                        <img src="assets/icons/protect-cloud-2.svg" alt="icon cloud" class="w-6 h-6" />
+                    </div>
+                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Cloud Drive</h3>
+                    <p class="text-gray-500 text-sm mb-4">Pindah kerjaan ke online tanpa biaya—bahkan gratis! Mulai
+                        dengan 5 GB penyimpanan. Coba sekarang!</p>
+                    <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">Pelajari selengkapnya</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow border hover:shadow-md transition">
+                    <div class="w-12 h-12 mb-4 rounded-xl bg-blue-100 flex items-center justify-center">
+                        <img src="assets/icons/target.svg" alt="icon sharing" class="w-6 h-6" />
+                    </div>
+                    <h3 class="font-semibold text-lg text-gray-900 mb-2">File Sharing</h3>
+                    <p class="text-gray-500 text-sm mb-4">Kemudahan mengakses file dengan fitur berbagi dengan teman.
+                        Berbagi file terkunci jadi mudah.</p>
+                    <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">Pelajari selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Kelola Keuangan Mudah -->
+    <section class="py-20 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-4">Kelola laporan keuangan dengan mudah</h2>
+                <p class="text-gray-600 mb-4">Pantau semua transaksi & laporan dalam satu dashboard. Lacak pengeluaran
+                    dan profit secara realtime.</p>
+                <div class="flex items-center gap-4 mt-4">
+                    <div class="flex -space-x-2">
+                        <img src="assets/avatars/users1.png" class="w-8 h-8 rounded-full border-2 border-white" />
+                        <img src="assets/avatars/users2.png" class="w-8 h-8 rounded-full border-2 border-white" />
+                        <img src="assets/avatars/users3.png" class="w-8 h-8 rounded-full border-2 border-white" />
+                    </div>
+                    <span class="text-sm text-gray-500">10.000+ pengguna telah mencoba</span>
+                </div>
+                <button class="mt-6 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Coba
+                    Gratis</button>
+            </div>
+            <div>
+                <img src="assets/dashboardLight.png" alt="Dashboard" class="w-full rounded-lg shadow-lg" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-20 bg-gray-50" id="harga">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold mb-4">Berlangganan</h2>
+            <p class="text-gray-600 mb-8">Pilih paket yang sesuai kebutuhan bisnis Anda.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <!-- Paket Standart -->
+                <div class="bg-white rounded-2xl shadow-md p-8">
+                    <h3 class="text-xl font-semibold mb-2">Standart</h3>
+                    <div class="text-3xl font-bold mb-6">Rp50rb<span
+                            class="text-base font-medium text-gray-500">/bulan</span></div>
+                    <ul class="space-y-3 text-sm text-gray-700 mb-6 text-left">
+                        <li>✅ Integrasi sumber data</li>
+                        <li>✅ Sinkronisasi transaksi</li>
+                        <li>✅ Dashboard harian</li>
+                        <li>✅ Ekspor laporan</li>
+                        <li>❌ Dukungan 24 jam</li>
+                    </ul>
+                    <button
+                        class="w-full bg-blue-600 text-white py-2 rounded-full font-semibold hover:bg-blue-700 transition">Pilih
+                        Paket</button>
+                </div>
+                <!-- Paket Extended -->
+                <div class="bg-blue-600 text-white rounded-2xl shadow-xl p-8 transform scale-105">
+                    <h3 class="text-xl font-semibold mb-2">Extended</h3>
+                    <div class="text-3xl font-bold mb-6">Rp75rb<span
+                            class="text-base font-medium text-white/70">/bulan</span></div>
+                    <ul class="space-y-3 text-sm mb-6 text-left">
+                        <li>✅ Semua fitur Standart</li>
+                        <li>✅ Analitik mendalam</li>
+                        <li>✅ Rekomendasi pengeluaran</li>
+                        <li>✅ Ekspor & API</li>
+                        <li>✅ Dukungan 24 jam</li>
+                    </ul>
+                    <button
+                        class="w-full bg-white text-blue-600 py-2 rounded-full font-semibold hover:bg-gray-100 transition">Pilih
+                        Paket</button>
+                </div>
+                <!-- Paket Premium+ -->
+                <div class="bg-white rounded-2xl shadow-md p-8">
+                    <h3 class="text-xl font-semibold mb-2">Premium+</h3>
+                    <div class="text-3xl font-bold mb-6">Rp200rb<span
+                            class="text-base font-medium text-gray-500">/bulan</span></div>
+                    <ul class="space-y-3 text-sm text-gray-700 mb-6 text-left">
+                        <li>✅ Semua fitur Extended</li>
+                        <li>✅ Otomatisasi multi-akun</li>
+                        <li>✅ Keamanan data lanjutan</li>
+                        <li>✅ Konsultasi finansial</li>
+                        <li>✅ Tim support khusus</li>
+                    </ul>
+                    <button
+                        class="w-full bg-blue-600 text-white py-2 rounded-full font-semibold hover:bg-blue-700 transition">Pilih
+                        Paket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni & Form -->
+    <section class="py-20 bg-white" id="testimoni">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Testimoni -->
+            <div>
+                <h2 class="text-3xl font-semibold mb-4">Apa Kata Orang Tentang Finarytics</h2>
+                <blockquote class="text-gray-700 italic border-l-4 border-blue-600 pl-4 mb-6">
+                    “Sejak pakai aplikasi ini, saya merasa lebih tenang. Semua data keuangan tercatat otomatis dan bisa
+                    saya akses kapan saja.”
+                    <br />
+                    <span class="block mt-2 font-semibold text-blue-600">– Sevalino R Ismail</span>
+                </blockquote>
+                <div class="flex items-center space-x-3">
+                    <img src="assets/avatars/users4.png" class="w-10 h-10 rounded-full border-2 border-white" />
+                    <img src="assets/avatars/users5.png" class="w-10 h-10 rounded-full border-2 border-white" />
+                    <img src="assets/avatars/users6.png" class="w-10 h-10 rounded-full border-2 border-white" />
+                    <button class="ml-2 text-blue-600 font-semibold text-sm hover:underline">Lihat Semua</button>
+                </div>
+            </div>
+            <!-- Form -->
+            <div class="bg-blue-600 text-white rounded-2xl p-8 shadow-lg max-w-md mx-auto lg:mx-0">
+                <div class="text-2xl font-bold mb-6 text-center">Get Started</div>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block mb-1 text-sm">Email</label>
+                        <input type="email" class="w-full px-4 py-2 rounded-md text-gray-900"
+                            placeholder="Masukkan email Anda" />
+                    </div>
+                    <div>
+                        <label class="block mb-1 text-sm">Pesan</label>
+                        <textarea rows="3" class="w-full px-4 py-2 rounded-md text-gray-900"
+                            placeholder="Apa yang Anda butuhkan?"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-white text-blue-900 font-semibold py-2 rounded-md hover:bg-blue-100 transition">Minta
+                        Demo</button>
+                </form>
+                <p class="text-xs text-center mt-4 opacity-50 text-right">atau <a href="#"
+                        class="hover:underline"><strong>Coba Gratis</strong></a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white pt-20 pb-10" id="kontak">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Finarytics</h3>
+                <p class="text-sm text-white/80 mb-4">Mulailah mencoba produk dari kami</p>
+                <form class="flex bg-white rounded-full overflow-hidden shadow w-full max-w-xs">
+                    <input type="email" placeholder="Masukkan email Anda di sini"
+                        class="flex-1 px-4 py-2 text-gray-800 text-sm" />
+                    <button type="submit" class="bg-blue-900 px-4 py-2 text-white font-bold text-sm">→</button>
+                </form>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3">Dukungan</h4>
+                <ul class="space-y-2 text-sm text-white/80">
+                    <li><a href="#">Pusat bantuan</a></li>
+                    <li><a href="#">Informasi</a></li>
+                    <li><a href="#">Tentang kami</a></li>
+                    <li><a href="#">Hubungi kami</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3">Bantuan dan Solusi</h4>
+                <ul class="space-y-2 text-sm text-white/80">
+                    <li><a href="#">Layanan pelanggan</a></li>
+                    <li><a href="#">Dokumen dukungan</a></li>
+                    <li><a href="#">Status sistem</a></li>
+                    <li><a href="#">Solusi cepat</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3">Produk</h4>
+                <ul class="space-y-2 text-sm text-white/80">
+                    <li><a href="#">Perencanaan</a></li>
+                    <li><a href="#">Keamanan</a></li>
+                    <li><a href="#">Pengelolaan bisnis</a></li>
+                    <li><a href="#">Harga produk</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white/20 mt-12 pt-6 text-center text-sm text-white/50">
+            © 2025 Finarytics Inc. | <a href="#" class="hover:underline">Syarat & Ketentuan</a> • <a href="#"
+                class="hover:underline">Privasi</a>
+        </div>
+    </footer>
+
+    <!-- Script Mobile Menu -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
